@@ -25,6 +25,7 @@
     font-weight: 800;
     font-size: 1.25rem;
     padding: 1rem 1.5rem;
+    cursor: pointer;
 }
 
 .section-description {
@@ -150,11 +151,56 @@ a>button {
 }
 
 .popular-tour-content {
-    width: 90rem;
+    width: 36rem;
     height: 43.75rem;
 }
 
 .popular-tour-container img {
     width: 33.75rem;
     height: 34.375rem;
+}
+
+
+/* responsiveness */
+
+@media screen and (max-width: 36rem) {
+
+    header,
+    main {
+        max-width: 36rem;
+        margin: 0 auto;
+    }
+
+    nav,
+    .drop-down-lists {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .drop-down-lists>input,
+    select,
+    a>button {
+        width: 20rem;
+        height: 3.25rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .menu-option a {
+        margin-left: 0.5rem;
+    }
+
+    nav .hero-logo-container {
+        margin-bottom: 0.5rem;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-container {
+        padding: 1.25rem 1.25rem;
+    }
+
 }
