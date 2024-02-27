@@ -1,55 +1,111 @@
 /* google popins font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* shared styles */
 * {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
+    font-family: "Mulish", sans-serif;
 }
 
-.light-gray-color{
+.light-gray-color {
     color: #424247;
 }
 
 /* header styles */
-header{
-    max-width: 1280px;
+header {
+    max-width: 73.125rem;
     margin: 0 auto;
 }
 
 /* nav styles */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav .hero-logo-container{
+nav .hero-logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 3.06rem;
 }
 
-.hero-logo-title{
+.hero-logo-title {
     color: #131318;
 }
 
-.travel-text{
+.travel-text {
     color: #ff5400;
 }
 
-.menu-option a{
+.menu-option a {
     text-decoration: none;
     color: #424247;
-    margin-left:2rem;
+    margin-left: 2rem;
     font-weight: 400;
 }
 
-.menu-option a:hover{
+.menu-option a:hover {
     color: #ff5400;
     font-weight: 400;
 }
 
+/* banner styles */
+.banner {
+    width: 73.125rem;
+    height: 31.25rem;
+}
 
+.banner-container {
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%) ,url("../Images/bannner.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 6.63rem 11.56rem;
+}
 
+.banner-title {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+}
+
+.banner-description {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-bottom: 3rem;
+}
+
+.drop-down-lists {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 30%);
+    border-radius: .5rem;
+}
+
+.drop-down-lists>input,
+select, a>button {
+    border: none;
+    width: 10.875rem;
+    height: 3.25rem;
+    border-radius: 0.5rem;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn-find-now {
+    background: #FF5400;
+    font-weight: 600;
+    color: #FFF;
+    cursor: pointer;
+}
