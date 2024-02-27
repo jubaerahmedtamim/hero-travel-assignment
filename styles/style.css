@@ -42,12 +42,13 @@ nav .hero-logo-container{
 .menu-option a{
     text-decoration: none;
     color: #424247;
-    margin-left: 2rem;
+    margin-left:2rem;
+    font-weight: 400;
 }
 
 .menu-option a:hover{
     color: #ff5400;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 
