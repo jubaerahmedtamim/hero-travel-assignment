@@ -159,6 +159,122 @@ a>button {
     height: 34.375rem;
 }
 
+/* destination section */
+
+.destination-content,
+.discount-content {
+    text-align: center;
+}
+
+
+
+.popular-place-name {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+/* card section styles */
+.cards-container {
+    margin-bottom: 6rem;
+}
+
+.card-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#card-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+#card-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+#card-3 {
+    position: relative;
+    right: -18rem;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.card img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.card-description {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* discount section */
+.discount-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 73.125rem;
+    height: 31.25rem;
+    background-image: url('../Images/Group\ 39.png');
+}
+
+#discount-card-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 73.125rem;
+    height: 31.25rem;
+    background-image: url('../Images/Group\ 40.png');
+}
+
+.discount-card {
+    width: 34rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-right: 3.5rem;
+    margin-left: 3.5rem;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+.discount-card-top {
+    display: flex;
+    justify-content: space-around;
+    color: #FF5400;
+}
+
+.card-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.special-color {
+    color: #FF5400;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
 
 /* responsiveness */
 
@@ -171,7 +287,8 @@ a>button {
     }
 
     nav,
-    .drop-down-lists, .popular-tour-container {
+    .drop-down-lists,
+    .popular-tour-container {
         flex-direction: column;
         align-items: center;
         margin-bottom: 2rem;
@@ -184,7 +301,7 @@ a>button {
         height: 3.25rem;
         margin-bottom: 0.5rem;
     }
-    
+
     .menu-option a {
         margin-left: 0.5rem;
     }
@@ -193,7 +310,8 @@ a>button {
         margin-bottom: 0.5rem;
     }
 
-    .banner, .popular-tour-container img {
+    .banner,
+    .popular-tour-container img {
         width: 100%;
         height: 100%;
     }
@@ -202,10 +320,11 @@ a>button {
         padding: 1.25rem 1.25rem;
     }
 
-    .popular-tour-content{
+    .popular-tour-content {
         width: 100%;
     }
-    .section-title{
+
+    .section-title {
         margin: 0;
     }
 
