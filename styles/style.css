@@ -189,7 +189,6 @@ a>button {
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     gap: 1.5rem;
 }
 
@@ -288,10 +287,18 @@ a>button {
 
     nav,
     .drop-down-lists,
-    .popular-tour-container {
+    .popular-tour-container  {
         flex-direction: column;
         align-items: center;
         margin-bottom: 2rem;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #card-3{
+        right: 0;
     }
 
     .drop-down-lists>input,
@@ -326,6 +333,12 @@ a>button {
 
     .section-title {
         margin: 0;
+    }
+
+
+
+    .discount{
+        display: none;
     }
 
 }
