@@ -341,7 +341,7 @@ input[type="email"] {
 
     nav,
     .drop-down-lists,
-    .popular-tour-container {
+    .popular-tour-container, .newsletter-container  {
         flex-direction: column;
         align-items: center;
         margin-bottom: 2rem;
@@ -410,6 +410,12 @@ input[type="email"] {
         height: 3rem;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    .badge {
+        position: relative;
+        top: -10.5rem;
+        right:-10rem;
+        width: 11.25rem;
     }
 
 }
