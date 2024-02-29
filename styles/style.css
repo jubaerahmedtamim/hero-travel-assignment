@@ -9,6 +9,7 @@
 .section-title {
     color: #131318;
     font-size: 2.5rem;
+    line-height: 3rem;
     font-weight: 800;
 }
 
@@ -146,13 +147,12 @@ a>button {
 .popular-tour-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
+    margin-bottom: 6rem;
 }
 
-.popular-tour-content {
-    width: 36rem;
-    height: 43.75rem;
-}
+.popular-tour-content {}
 
 .popular-tour-container img {
     width: 33.75rem;
@@ -160,11 +160,33 @@ a>button {
 }
 
 /* destination section */
+.grid-img-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-.destination-content,
-.discount-content {
-    text-align: center;
 }
+
+.destinaton-content {
+    position: relative;
+}
+/* .destinaton-content img{
+    width: 100%;
+} */
+
+.destination-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+
+}
+
 
 
 
@@ -281,6 +303,20 @@ a>button {
 }
 
 /* perfect place section */
+.perfect-place-image {
+    position: relative;
+}
+
+.perfect-text {
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* newsletter */
 .newsletter-container {
     display: flex;
     justify-content: center;
@@ -330,21 +366,24 @@ input[type="email"] {
 }
 
 /* footer */
-footer{
+footer {
     background: rgba(19, 19, 24, 0.05);
 }
+
 .footer-container {
     max-width: 58rem;
     margin: 0 auto;
 }
-footer > .footer-container .hero-logo-container{
+
+footer>.footer-container .hero-logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 6rem;
 }
-.social-icons{
+
+.social-icons {
     font-size: 1.5rem;
     display: flex;
     gap: 2rem;
@@ -352,27 +391,33 @@ footer > .footer-container .hero-logo-container{
     margin-bottom: 1.5rem;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 5rem;
 }
+
 /* responsiveness */
 
 @media screen and (max-width: 36rem) {
 
     header,
-    main,footer {
+    main,
+    footer {
         max-width: 36rem;
         margin: 0 auto;
     }
 
     nav,
     .drop-down-lists,
-    .popular-tour-container, .newsletter-container  {
+    .popular-tour-container,
+    .newsletter-container, .grid-img-containe {
         flex-direction: column;
         align-items: center;
         margin-bottom: 2rem;
+    }
+    .destinaton-content img{
+        width: 25rem;
     }
 
     .cards {
@@ -439,16 +484,19 @@ footer > .footer-container .hero-logo-container{
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
     .badge {
         position: relative;
         top: -10.5rem;
-        right:-10rem;
+        right: -10rem;
         width: 11.25rem;
     }
+
     .footer-container {
         width: 100%;
     }
-    .copyright{
+
+    .copyright {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
