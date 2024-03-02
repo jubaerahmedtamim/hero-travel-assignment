@@ -390,6 +390,9 @@ footer>.footer-container .hero-logo-container {
     justify-content: center;
     margin-bottom: 1.5rem;
 }
+.social-icons>a {
+    color: #131318;
+}
 
 .copyright {
     text-align: center;
